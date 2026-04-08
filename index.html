@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Not Geoguesser</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+
+<div class="game-container">
+
+  <h1>🌍 Not Geo Guesser</h1>
+
+  <div class="top-bar">
+    <button id="assistToggle">Assist: OFF</button>
+    <span>Round: <b id="round">1</b></span>
+    <span>Score: <b id="score">0</b></span>
+  </div>
+
+  <div class="image-container">
+    <div id="loading">Loading image...</div>
+    <img id="image" />
+  </div>
+
+  <div id="map"></div>
+
+  <button id="submit">Submit Guess</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
